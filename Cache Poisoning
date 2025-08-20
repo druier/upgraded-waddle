@@ -21,3 +21,29 @@ This can lead to:
 
 ## 📁 Repository Structure
 
+cache-poisoning-explained/
+├── docs/
+│ ├── basics.md
+│ ├── examples.md
+│ └── prevention.md
+├── lab/
+│ ├── vulnerable-app/
+│ │ ├── app.py
+│ │ └── requirements.txt
+│ └── walkthrough.md
+├── LICENSE
+└── README.md
+
+
+---
+
+## 🧪 Lab: Vulnerable Demo App
+
+A minimal Python Flask application that demonstrates cache poisoning vulnerability is available under the `lab/vulnerable-app/` directory.
+
+### 🔧 Setup Instructions
+
+```bash
+cd lab/vulnerable-app
+pip install -r requirements.txt
+python app.py
