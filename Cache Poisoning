@@ -1,0 +1,23 @@
+# 🧠 Cache Poisoning Explained
+
+Welcome to **Cache Poisoning Explained** – a repository that dives deep into one of the most misunderstood and impactful web application vulnerabilities: **Cache Poisoning**.
+
+## 📌 What is Cache Poisoning?
+
+**Cache Poisoning** is a type of attack where an attacker tricks a caching system (like CDN, reverse proxy, or browser cache) into storing a manipulated version of a resource. Future users requesting the same resource receive the malicious response from the cache instead of a legitimate one from the origin server.
+
+This can lead to:
+
+- Content spoofing
+- XSS (Cross-Site Scripting)
+- Authentication bypass
+- Redirects to malicious sites
+
+## 🔍 Attack Overview
+
+1. The attacker crafts a malicious request with non-standard headers or URL parameters.
+2. The server responds normally (reflecting part of the request), and the CDN or caching layer stores this response.
+3. Future legitimate users are served the poisoned cache.
+
+## 📁 Repository Structure
+
